@@ -117,6 +117,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
+}
+
+.slice-card {
+  @apply bg-gray-100 w-fit p-5 rounded-2xl;
 }
