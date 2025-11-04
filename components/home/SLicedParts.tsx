@@ -13,7 +13,6 @@ const SLicedParts = () => {
       start: "top 10%",
       end: "bottom center",
       scrub: 1,
-      markers: true,
     };
     gsap.to(".slice-mint", {
       y: 1200,
