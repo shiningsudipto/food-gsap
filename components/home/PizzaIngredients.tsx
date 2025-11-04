@@ -19,6 +19,7 @@ const PizzaIngredients = () => {
         start: "top center",
         end: "bottom center",
         scrub: 1,
+        // markers: true,
       };
 
       // Animate ingredients on scroll - using the common configuration
@@ -51,8 +52,8 @@ const PizzaIngredients = () => {
       });
 
       gsap.to(".garlic", {
-        y: 600,
-        x: 660,
+        y: 550,
+        x: 620,
         scale: 0.9,
         duration: 1,
         scrollTrigger: commonScrollTrigger,
@@ -66,7 +67,7 @@ const PizzaIngredients = () => {
 
       gsap.to(".capsicum", {
         y: -140,
-        x: 520,
+        x: 500,
         duration: 1,
         scrollTrigger: commonScrollTrigger,
       });
@@ -90,7 +91,7 @@ const PizzaIngredients = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="h-[200vh]">
+    <section ref={sectionRef} className="h-[180vh]">
       <div className="grid grid-cols-2 h-screen sticky top-0">
         <div ref={ingredientsRef} className="relative ingredients">
           {/* ... Your Image components ... */}
